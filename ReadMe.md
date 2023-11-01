@@ -1,26 +1,53 @@
-# Color Guessing Game
+# 2ITA-JS-Guessing-Game
 
-Guess the right color from the RGB value.
+Welcome to the 2ITA-JS-Guessing-Game repository! 
 
+This is a simple web-based guessing game implemented using
 
+ JavaScript, Math.random(), Flexbox, and the JavaScript DOM.
+
+You can play the game by visiting the [2ITA-JS-Guessing-Game Demo](https://souplittle.github.io/2ITA-JS-Guessing-Game/).
 
 ## Table of Contents
 
-  - [Color Guessing Game](#color-guessing-game)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Features](#features)
-  - [Getting Started](#getting-started)
-  - [Resources](#resources)
-
-
-## Introduction
-
-Provide an introduction to your project. Explain what it does, why it's useful, and any key concepts or technologies it relies on.
+- [Features](#features)
+- [How to play](#how-to-play)
+- [Assignment Requirements](#assignment-requirements)
+- [Resources](#resorces)
 
 ## Features
 
-List the main features and functionalities of your project. This section can also include a roadmap for future features.
+- A simple and interactive guessing game.
+- Utilizes JavaScript's `Math.random()` to generate random colors.
+- Stylish design and layout using Flexbox.
+- Allows users to select a difficulty level: "Easy" or "Hard".
+- Provides feedback on your guesses.
+- Keeps track of your score.
+- Randomly generates a new color to guess with "New Colors" button.
+
+## How to Play
+- Open the game in your web browser.
+
+- Choose the difficulty level by clicking either the "Easy" or "Hard" button.
+
+- Click the "New Colors" button to generate a new color to guess.
+
+- Click on the color squares to guess the correct color.
+
+- You will receive feedback on your guess and your score will be updated.
+
+- Keep guessing until you correctly guess the color.
+
+- Click the "New Colors" button to start a new game with a new random color.
+
+## Assignment Requirements
+- This project fulfills the following assignment requirements:
+
+- Implements Math.random() to generate random colors.
+
+- Utilizes Flexbox for a responsive and stylish layout.
+
+- Uses JavaScript DOM for interactivity, including color changes and score updates.
 
 ## Resources
 
