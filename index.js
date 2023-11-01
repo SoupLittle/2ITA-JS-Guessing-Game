@@ -1,53 +1,55 @@
-var numSquares = 6;
-var colors = [];
-var pickedColor;
-var squares = document.querySelectorAll(".square");
-var resetButton = document.querySelector("#reset");
-var modeButtons = document.querySelectorAll(".mode");
-var messageDisplay = document.querySelector("#message");
-var h1 = document.querySelector("h1");
-var colorDisplay = document.querySelector("#colorDisplay");
+var numSquares = 12
+var colors = []
+var pickedColor
+var squares = document.querySelectorAll(".square")
+var resetButton = document.querySelector("#reset")
+var modeButtons = document.querySelectorAll(".mode")
+var messageDisplay = document.querySelector("#message")
+var h1 = document.querySelector("h1")
+var colorDisplay = document.querySelector("#colorDisplay")
 
 // Generates a random color
 function generateRandomColor() {
-  var red = Math.floor(Math.random() * 256);
-  var green = Math.floor(Math.random() * 256);
-  var blue = Math.floor(Math.random() * 256);
-  return "rgb(" + red + ", " + green + ", " + blue + ")";
+  var red = Math.floor(Math.random() * 256)
+  var green = Math.floor(Math.random() * 256)
+  var blue = Math.floor(Math.random() * 256)
+  return "rgb(" + red + ", " + green + ", " + blue + ")"
 }
 
 // Initialize the game
 function init() {
-  setupModeButtons();
-  setupSquares();
-  reset();
+  setupModeButtons()
+  setupSquares()
+  reset()
 }
 
 function setupModeButtons() {
   for (var i = 0; i < modeButtons.length; i++) {
     modeButtons[i].addEventListener('click', function() {
-      modeButtons[0].classList.remove('selected');
-      modeButtons[1].classList.remove('selected');
-      this.classList.add("selected");
-      this.textContent === "Easy" ? numSquares = 3 : numSquares = 6;
-      reset();
-    });
+      modeButtons[0].classList.remove('selected')
+      modeButtons[1].classList.remove('selected')
+      modeButtons[2].classList.remove('selected')
+      this.classList.add("selected")
+      this.textContent === "Easy" ? numSquares = 3 : numSquares = 6 
+      this.textContent === "Extreme" ? numSquares = 12 : numSquares = 6
+      reset()
+    })
   }
 }
 
 function setupSquares() {
   for (var i = 0; i < squares.length; i++) {
     squares[i].addEventListener('click', function() {
-      var clickedColor = this.style.backgroundColor;
+      var clickedColor = this.style.backgroundColor
 
       if (clickedColor === pickedColor) {
-        messageDisplay.textContent = "Congrats you chose right!";
-        resetButton.textContent = "Play again?";
+        messageDisplay.textContent = "Congrats you chose right!"
+        resetButton.textContent = "Play again?"
         changeColors(pickedColor);
-        h1.style.backgroundColor = clickedColor;
+        h1.style.backgroundColor = clickedColor
       } else {
-        this.style.backgroundColor = "#232323";
-        messageDisplay.textContent = "Wrong Choice!";
+        this.style.backgroundColor = "#232323"
+        messageDisplay.textContent = "Wrong Choice!"
       }
     });
   }
