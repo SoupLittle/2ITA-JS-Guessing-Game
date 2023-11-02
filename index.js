@@ -1,4 +1,4 @@
-var numSquares = 12
+var numSquares = 9
 var colors = []
 var pickedColor
 var squares = document.querySelectorAll(".square")
@@ -31,7 +31,7 @@ function setupModeButtons() {
       modeButtons[2].classList.remove('selected')
       this.classList.add("selected")
       this.textContent === "Easy" ? numSquares = 3 : numSquares = 6 
-      this.textContent === "Extreme" ? numSquares = 12 : numSquares = 6
+      this.textContent === "Extreme" ? numSquares = 9 : numSquares = 3
       reset()
     })
   }
