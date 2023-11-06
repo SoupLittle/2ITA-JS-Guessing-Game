@@ -22,13 +22,12 @@ You can play the game by visiting the [2ITA-JS-Guessing-Game Demo](https://soupl
 - Stylish design and layout using Flexbox.
 - Allows users to select a difficulty level: "Easy" or "Hard".
 - Provides feedback on your guesses.
-- Keeps track of your score.
 - Randomly generates a new color to guess with "New Colors" button.
 
 ## How to Play
 - Open the game in your web browser.
 
-- Choose the difficulty level by clicking either the "Easy" or "Hard" button.
+- Choose the difficulty level by clicking either the "Easy","Hard" or "Extreme" buttons.
 
 - Click the "New Colors" button to generate a new color to guess.
 
@@ -38,24 +37,24 @@ You can play the game by visiting the [2ITA-JS-Guessing-Game Demo](https://soupl
 
 - Keep guessing until you correctly guess the color.
 
-- Click the "New Colors" button to start a new game with a new random color.
+- Click the "Play again" button to start a new game with a new random color.
 
 ## Assignment Requirements
-- This project fulfills the following assignment requirements:
+- This project fulfils the following assignment requirements:
 
 - Implements Math.random() to generate random colors.
 
 - Utilizes Flexbox for a responsive and stylish layout.
 
-- Uses JavaScript DOM for interactivity, including color changes and score updates.
+- Uses JavaScript DOM for interactivity, including color changes.
 
 ## Resources
 
 Here are some websites and resources that were instrumental in the development of this project:
 
 - [Online Tutorial](https://medium.com/free-code-camp/learn-how-to-manipulate-the-dom-by-building-a-simple-javascript-color-game-1a3aec1d109a)
-  - The basis code i've used for this project.
+  - The basis code I've used for this project.
 - [GitHub Code from Tutorial](https://github.com/sirdarthvader/DOM-manipulation/tree/master)
-  - Just the github code, the website isn't 100% working.
+  - Just the GitHub code, the website isn't 100% working.
 - [ChatGPT](https://chat.openai.com/)
-  - For when I had peaces of code that wouldn't work, no mater how much I tried😭
+  - For when I had pieces of code that wouldn't work, no matter how much I tried😭
