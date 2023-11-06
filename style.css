@@ -82,17 +82,3 @@ button:hover {
 	position: fixed;
 	bottom: 0;
 }
-/*
-.extreme-mode {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr); /* The gird layout for extreme mode
-	gap: 10px; 
-	max-width: 600px;
-  }
-  
-  .extreme-mode .square {
-	width: 100%;
-	padding-bottom: 100%;
-	border-radius: 15%;
-	transition: background 0.6s;
-  }*/

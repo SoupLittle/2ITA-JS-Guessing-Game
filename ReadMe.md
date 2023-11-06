@@ -4,7 +4,7 @@ Welcome to the 2ITA-JS-Guessing-Game repository!
 
 This is a simple web-based guessing game implemented using
 
- JavaScript, Math.random(), Flexbox, and the JavaScript DOM.
+JavaScript, Math.random(), Flexbox, and the JavaScript DOM.
 
 You can play the game by visiting the [2ITA-JS-Guessing-Game Demo](https://souplittle.github.io/2ITA-JS-Guessing-Game/).
 
@@ -57,3 +57,5 @@ Here are some websites and resources that were instrumental in the development o
   - The basis code i've used for this project.
 - [GitHub Code from Tutorial](https://github.com/sirdarthvader/DOM-manipulation/tree/master)
   - Just the github code, the website isn't 100% working.
+- [ChatGPT](https://chat.openai.com/)
+  - For when I had peaces of code that wouldn't work, no mater how much I tried😭

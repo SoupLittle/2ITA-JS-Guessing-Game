@@ -9,6 +9,7 @@ var h1 = document.querySelector("h1")
 var colorDisplay = document.querySelector("#colorDisplay")
 
 // Generates a random color
+
 function generateRandomColor() {
   var red = Math.floor(Math.random() * 256)
   var green = Math.floor(Math.random() * 256)
@@ -16,12 +17,7 @@ function generateRandomColor() {
   return "rgb(" + red + ", " + green + ", " + blue + ")"
 }
 
-// Initialize the game
-function init() {
-  setupModeButtons()
-  setupSquares()
-  reset()
-}
+// Mode
 
 function setupModeButtons() {
   for (var i = 0; i < modeButtons.length; i++) {
@@ -30,12 +26,19 @@ function setupModeButtons() {
       modeButtons[1].classList.remove('selected')
       modeButtons[2].classList.remove('selected')
       this.classList.add("selected")
-      this.textContent === "Easy" ? numSquares = 3 : numSquares = 6 
-      this.textContent === "Extreme" ? numSquares = 9 : numSquares = 3
-      reset()
+      if (this.textContent === "Easy") {
+        numSquares = 3;
+      } else if (this.textContent === "Extreme") {
+        numSquares = 9;
+      } else {
+        numSquares = 6;
+      }
+      reset();
     })
   }
 }
+
+// If you chose right or not
 
 function setupSquares() {
   for (var i = 0; i < squares.length; i++) {
@@ -56,6 +59,7 @@ function setupSquares() {
 }
 
 // Reset button
+
 resetButton.addEventListener('click', function() {
   reset();
 });
@@ -77,9 +81,6 @@ function reset() {
   }
 }
 
-// Initialize the game
-init();
-
 function generateRandomColors(num) {
   var arr = [];
   for (var i = 0; i < num; i++) {
@@ -93,8 +94,19 @@ function pickColor() {
   return colors[random];
 }
 
+// Changes the background to the right color when choosing the right box
+
 function changeColors(color) {
   for (var i = 0; i < squares.length; i++) {
     squares[i].style.backgroundColor = color;
   }
 }
+
+// Initialize the game
+
+function init() {
+  setupModeButtons()
+  setupSquares()
+  reset()
+}
+init();
