@@ -54,7 +54,5 @@ Here are some websites and resources that were instrumental in the development o
 
 - [Online Tutorial](https://medium.com/free-code-camp/learn-how-to-manipulate-the-dom-by-building-a-simple-javascript-color-game-1a3aec1d109a)
   - The basis code I've used for this project.
-- [GitHub Code from Tutorial](https://github.com/sirdarthvader/DOM-manipulation/tree/master)
-  - Just the GitHub code, the website isn't 100% working.
 - [ChatGPT](https://chat.openai.com/)
   - For when I had pieces of code that wouldn't work, no matter how much I tried😭
